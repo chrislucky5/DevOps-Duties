@@ -1,5 +1,5 @@
 **Pre-requisites:
-
+		
 It is Highly recommended to pocess a system administration background before attending the project
 
 A solid understanding of Linux OS commands along with the importance of each aws service is nice to have.
