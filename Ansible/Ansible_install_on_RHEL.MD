@@ -24,10 +24,12 @@
    useradd ansadmin
    passwd ansadmin
    ```
+   
 1. Below command adds ansadmin to sudoers file. But we strongly recommended using "visudo" command if you are aware vi or nano editor.  (on Control node and Managed host)
    ```sh
    echo "ansadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
    ```
+   
 1. Using key-based authentication is advised. If you are still at the learning stage use password-based authentication (on Control node and Managed host)
    ```sh 
    # sed command replaces "PasswordAuthentication no to yes" without editing file 
