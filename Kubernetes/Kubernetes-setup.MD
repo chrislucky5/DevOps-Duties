@@ -42,7 +42,10 @@
 1. create an S3 bucket (A bucket should have a unique name all across the AWS account)
    ```sh
     aws s3 mb s3://devops1.k8s.uct1.in 
+    
+    If an error occure like "make_bucket failed: s3://devops1.k8s.uct1.in Unable to locate credentials". In that case you need to execute the 'aws configure' command then enter AWS Access Key ID & AWS Secret Access Key Default region name & Default output format
    ```
+   
 1. Expose environment variable (Use the same name as the bucket you created): 
    ```sh
     export KOPS_STATE_STORE=s3://devops1.k8s.uct1.in 
