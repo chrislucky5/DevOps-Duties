@@ -43,7 +43,8 @@
    ```sh
     aws s3 mb s3://devops1.k8s.uct1.in 
     
-    If an error occure like "make_bucket failed: s3://devops1.k8s.uct1.in Unable to locate credentials". In that case you need to execute the 'aws configure' command then enter AWS Access Key ID & AWS Secret Access Key Default region name & Default output format
+    If an error occure like "make_bucket failed: s3://devops1.k8s.uct1.in Unable to locate credentials". 
+    In that case you need to execute the 'aws configure' command then enter AWS Access Key ID; AWS Secret Access Key; Default region name & Default output format of the User.
    ```
    
 1. Expose environment variable (Use the same name as the bucket you created): 
