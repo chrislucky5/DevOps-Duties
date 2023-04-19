@@ -13,6 +13,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    ```sh
   amazon-linux-extras list | grep java
   sudo amazon-linux-extras -y install java-openjdk11
+  ```
 
 1. Confirm Java Version and set the java home momentally
    ```sh
