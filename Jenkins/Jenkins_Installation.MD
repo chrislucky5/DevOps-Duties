@@ -89,4 +89,4 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.14.1+1-LTS, mixed mode)
 	Execute shell: echo "Welcome to Jenkins Demo"
 1. Save your job 
 1. Build job
-1. Check "console output"
+1. Check "console output" 
