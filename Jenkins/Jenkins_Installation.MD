@@ -6,16 +6,16 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 1. EC2 Instance 
    - With Internet Access
    - Security Group with Port `8080` open for internet
-1. Java v11.0.13.x 
+1. Java 11 should be installed 
 
-## Install Java
+### Install Java
 1. We will be using open java for our demo, Get the latest version from http://openjdk.java.net/install/
    ```sh
-   yum install java-11-openjdk*
-   #yum -y install java-11-openjdk.x86_64
+  amazon-linux-extras list | grep java
+  sudo amazon-linux-extras -y install java-openjdk11
    ```
 
-1. Confirm Java Version and set the java home
+1. Confirm Java Version and set the java home momentally
    ```sh
    java -version
    find /usr/lib/jvm -name "*jre*"
@@ -49,7 +49,7 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.14.1+1-LTS, mixed mode)
    yum -y install wget
    sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
    sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
-   sudo amazon-linux-extras -y install epel 
+   sudo amazon-linux-extras install java-openjdk11 
    sudo yum -y install jenkins
 
    # Note: The "epel-release" package install by the amazon package manager will help in getting the "daemonize" package required as a dependency by the "jenkins" package.
