@@ -11,9 +11,9 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 ### Install Java
 1. We will be using open java for our demo, Get the latest version from http://openjdk.java.net/install/
    ```sh
-  amazon-linux-extras list | grep java
-  sudo amazon-linux-extras -y install java-openjdk11
-  ```
+   amazon-linux-extras list | grep java
+   sudo amazon-linux-extras -y install java-openjdk11
+   ```
 
 1. Confirm Java Version and set the java home momentally
    ```sh
