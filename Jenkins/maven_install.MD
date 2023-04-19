@@ -19,10 +19,11 @@ Maven is a code build tool which used to convert your code to an artifact. this 
 	
 1. Setup M2_HOME and M2 paths in .bash_profile of the user and add these to the path variable
    ```sh
-   vi ~/.bash_profile
-   M2_HOME=/opt/maven/apache-maven-3.8.3
+   vim ~/.bash_profile
+   M2_HOME=/opt/maven/
    M2=$M2_HOME/bin
-   PATH=<Existing_PATH>:$M2_HOME:$M2
+   JAVA_HOME=/usr/lib/jvm/jre-11-openjdk-11*
+   PATH=<Existing_PATH>:$JAVA_HOME:$M2_HOME:$M2
    ```
 #### Checkpoint 
 1. Run the command below to load your configuration 
