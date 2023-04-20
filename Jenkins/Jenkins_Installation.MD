@@ -29,6 +29,8 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    # If for some reason you don't find the PATH variable in this file on-premise, please add these lines along with the JAVA_HOME variable you're trying to setup.
    PATH=$PATH:$HOME/.local/bin:$HOME/bin
    export PATH
+   
+   sudo yum install maven -y
 
    - To load your recent modifications, run
    
