@@ -18,7 +18,7 @@ Maven is a code build tool which used to convert your code to an artifact. this 
      ```
 	
 1. Setup M2_HOME and M2 paths in .bash_profile of the user and add these to the path variable
-   ```sh
+```sh
 sudo vim ~/.bash_profile
    
 #then Copy & Paste the following contain into it also make sure to modify the JAVA_HOME version "java-11-openjdk-11*"
@@ -28,7 +28,7 @@ M2=/opt/maven/bin
 JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.amzn2.0.1.x86_64
 PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2_HOME:$M2
 export PATH
-   ```
+```
 #### Checkpoint 
 1. Run the command below to load your configuration
 ```sh 
