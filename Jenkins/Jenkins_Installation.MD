@@ -45,10 +45,9 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.14.1+1-LTS, mixed mode)
 ## Install Jenkins
  You can install jenkins using the rpm or by setting up the repo. We will set up the repo so that we can update it easily in the future.
 1. Get the latest version of jenkins from https://pkg.jenkins.io/redhat-stable/ and install
-   ```sh
+```sh
 yum -y install wget
-sudo wget -O /etc/yum.repos.d/jenkins.repo \
-    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 sudo yum upgrade
 # Add required dependencies for the jenkins package
@@ -56,9 +55,8 @@ sudo yum install java-11-openjdk #on Amazon linux "sudo amazon-linux-extras inst
 sudo yum install jenkins -y
 sudo systemctl daemon-reload
 
-   # Note: The "epel-release" package install by the amazon package manager will help in getting the "daemonize" package required as a dependency by the "jenkins" package.
-   ```
-
+# Note: The "epel-release" package install by the amazon package manager will help in getting the "daemonize" package required as a dependency by the "jenkins" package.
+```
 
    ### Start Jenkins
    ```sh
