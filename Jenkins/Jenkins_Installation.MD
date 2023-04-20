@@ -51,7 +51,7 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-sta
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 sudo yum upgrade
 # Add required dependencies for the jenkins package
-sudo yum install java-11-openjdk #on Amazon linux "sudo amazon-linux-extras install java-openjdk11 -y"
+sudo yum install java-11-openjdk # on Amazon linux "sudo amazon-linux-extras install java-openjdk11 -y"
 sudo yum install jenkins -y
 sudo systemctl daemon-reload
 
