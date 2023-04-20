@@ -29,6 +29,7 @@ Maven is a code build tool which used to convert your code to an artifact. this 
 1. Run the command below to load your configuration 
 
    [root@~] # source .bash_profile
+   sudo yum install maven -y
 
 2. Check maven version
   
