@@ -26,11 +26,13 @@ Maven is a code build tool which used to convert your code to an artifact. this 
    PATH=<Existing_PATH>:$JAVA_HOME:$M2_HOME:$M2
    ```
 #### Checkpoint 
-1. Run the command below to load your configuration 
+1. Run the command below to load your configuration
+```sh 
 
    [root@~] # source .bash_profile
+   
    sudo yum install maven -y
-
+```
 2. Check maven version
   
     ```sh
